@@ -15,7 +15,7 @@ investimento = st.slider("Investimento total (I)", 50, 200, 100)
 a = st.slider("Parâmetro a (retorno marginal inicial)", 0.5, 5.0, 2.0)
 b = st.slider("Parâmetro b (retorno decrescente)", 0.001, 0.05, 0.01)
 r_base = st.slider("Custo base do capital externo (%)", 0.0, 0.3, 0.10, step=0.01)
-lambda_sens = st.slider("Sensibilidade do custo ao financiamento externo (λ)", 0.000, 0.010, 0.001, step=0.0005)
+lambda_sens = st.slider("Sensibilidade do custo ao financiamento externo (λ)", 0.0000, 0.0100, 0.0010, step=0.0005)
 custo_hedge_pct = st.slider("Custo do hedge (% do investimento)", 0.0, 0.05, 0.01)
 
 # Fluxos de caixa simulados
